@@ -36,3 +36,11 @@ body {
 #clearBtn {
   background-color: #f788c8;
 }
+
+/* Responsive Design */
+@media (max-width: 575px) {
+  .left {
+    background: none;
+    width: 0;
+  }
+}
