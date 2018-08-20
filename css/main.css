@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Pangolin', cursive;
+  background-color: #f7f8f9;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.left {
+  background-image: url("../img/hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#submitBtn,
+#clearBtn {
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#submitBtn {
+  background-color: #65b553;
+}
+
+#clearBtn {
+  background-color: #f788c8;
+}

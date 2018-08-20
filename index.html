@@ -6,9 +6,13 @@
 		<!-- VIEWPORT -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- TITLE -->
-		<title></title>
+		<title>to do list</title>
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<!-- GOOGLE FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 		<!-- FONTAWESOME -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<!-- BOOTSTRAP CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<!-- ORIGINAL CSS -->
@@ -16,18 +20,32 @@
 	</head>
 	<body>
 
-		<div class="form-group container text-center">
-	    <label class="display-4 my-5">To do list</label>
-	    <input type="text" class="form-control mb-5 rounded" id="toDoInput">
-			<button type="button" onclick="myClick()" class="mb-3 btn btn-outline-info">Submit</button>
-			<div class="w-50 container">
-				<!-- Create list by JS -->
-				<ol id="toDoList">
-				</ol>
+		<div class="container-fluid text-center wrapper">
+			<div class="row">
+				<!-- Left side - image -->
+				<div class="col-6 left">
+				</div>
 
-			</div>
-
-	  </div>
+				<!-- Right side - to do list -->
+			  <div class="col-6">
+					<h1 class=" mt-5 display-4">To do list</h1>
+					<!-- input wrapper -->
+					<div class="input-group px-5 mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+						</div>
+						<input type="text" class="form-control" id="toDoInput">
+					</div>
+					<button type="button" id="submitBtn">Submit</button>
+					<button type="button" id="clearBtn">Clear</button>
+					<!-- Result display here -->
+					<div id="result">
+						<!-- Create list by JS -->
+						<ol id="toDoList" class=" px-5 text-left"></ol>
+					</div>
+				</div>
+		 	</div> <!-- the end of row -->
+	  </div> <!-- the end of container -->
 
 
 
